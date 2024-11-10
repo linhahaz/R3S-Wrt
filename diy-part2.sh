@@ -23,7 +23,7 @@ sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generat
 # sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=1048576' package/base-files/files/etc/sysctl.conf
 
 # 移除 openwrt feeds 自带的核心包
-# rm -rf feeds/packages/net/{alist,adguardhome,xray*,v2ray*,v2ray*,sing*,smartdns}
+rm -rf feeds/packages/net/{alist,adguardhome,xray*,v2ray*,v2ray*,sing*,smartdns}
 
 # golang 1.22
 # rm -rf feeds/packages/lang/golang
